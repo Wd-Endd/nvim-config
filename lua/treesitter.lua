@@ -1,0 +1,9 @@
+return {
+    "c",
+    "lua",
+    "vim", "vimdoc",
+    "query", "markdown", "markdown_inline",
+    "html", "javascript", "css", "typescript",
+    "tsx", "scss", "json",
+    "python",
+}

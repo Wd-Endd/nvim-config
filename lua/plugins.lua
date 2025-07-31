@@ -1,28 +1,19 @@
 return {
-    -- Catpuccin - Color Cheamps
-    require("plugins/catppuccin"),
+    -- Catppuccin Color Scheme
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
-    -- Telescope - Files Finder
-    require("plugins/telescope"),
+    -- Alpha Nvim Title Screen
+    require("plugins/alpha-nvim"),
 
-    -- Telescope UI Select
-    require("plugins/telescope-ui-select"),
-
-    -- Treesitter - Better Syntax Highlughting
-    require("plugins/treesitter"),
-
-    -- Neo Tree - Workspace Tree Shower
+    -- Neo Tree Workspace Folder
     require("plugins/neo-tree"),
 
+    -- Telescope Files Finder
+    require("plugins/telescope"),
+
     -- Auto Save
-    require("plugins/auto-save"),
+    { "brianhuster/autosave.nvim" },
 
-    -- Mason
-    require("plugins/mason"),
-
-    -- Mason LSP Config
-    require("plugins/mason-lspconfig"),
-
-    -- Nvim LSP Config
-    require("plugins/nvim-lspconfig"),
+    -- Nvim Treesitter Better Syntax Highlighting
+    require("plugins/nvim-treesitter"),
 }
