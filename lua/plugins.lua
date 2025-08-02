@@ -14,6 +14,12 @@ return {
     -- Auto Save
     { "brianhuster/autosave.nvim" },
 
+    -- AutOPairs
+    require("plugins.nvim-autopairs"),
+
+    -- Auto Tabs
+    { "tpope/vim-sleuth" },
+
     -- Nvim Treesitter Better Syntax Highlighting
     require("plugins.nvim-treesitter"),
 
@@ -34,4 +40,13 @@ return {
 
     -- ToggleTerm 
     require("plugins.toggleterm"),
+
+    -- Comment
+    require("plugins.comment"),
+
+    --TypeScript Tools
+    -- require("plugins.typescript-tools"),
+
+    -- BarBar Show Tabpages
+    require("plugins.barbar"),
 }

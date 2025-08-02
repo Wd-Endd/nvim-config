@@ -23,6 +23,8 @@ return {
                     { name = 'buffer' },
                     { name = 'path' },
                 }),
+
+                sorting = require("config.cmp-sorting"),
             })
         end,
         dependencies = {
