@@ -2,6 +2,10 @@ return {
     "nvim-treesitter/nvim-treesitter",
     dependencies = {
         "p00f/nvim-ts-rainbow",
+        {
+            "davidmh/mdx.nvim",
+            config = true,
+        },
     },
     -- branch = 'master',
     -- lazy = false,

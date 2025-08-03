@@ -49,4 +49,7 @@ return {
 
     -- BarBar Show Tabpages
     require("plugins.barbar"),
+
+    -- Mark Down Preview
+    require("plugins.md-preview"),
 }

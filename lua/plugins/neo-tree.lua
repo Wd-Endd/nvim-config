@@ -11,7 +11,12 @@ return {
         require("neo-tree").setup({
             filesystem = {
                 use_libuv_file_watcher = true,
-            },
+                filtered_items = {
+                    hide_dotfiles = false,
+                    hide_gitignored = false,
+                    hide_by_name = require("filesystem-excludes"),
+                },
+            }
         })
     end
 }
