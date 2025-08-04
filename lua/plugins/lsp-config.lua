@@ -5,15 +5,6 @@ return {
             ensure_installed = require("language-servers"),
         },
         -- config = function ()
-        --     local lspconfig = require('lspconfig')
-        --     lspconfig.ts_ls.setup({
-        --         on_attach = on_attach,
-        --         settings = {
-        --             ['typescript.preferences.importModuleSpecifier'] = "auto",
-        --             ['javascript.preferences.importModuleSpecifier'] = "auto",
-        --             ['typescript.suggest.autoImports'] = true,
-        --         },
-        --     })
         -- end,
         dependencies = {
             {
@@ -30,5 +21,15 @@ return {
             },
             "neovim/nvim-lspconfig",
         },
-    }
+    },
+    -- {
+    --     'nvimdev/lspsaga.nvim',
+    --     config = function()
+    --         require('lspsaga').setup({})
+    --     end,
+    --     dependencies = {
+    --         'nvim-treesitter/nvim-treesitter', -- optional
+    --         'nvim-tree/nvim-web-devicons',     -- optional
+    --     }
+    -- }
 }

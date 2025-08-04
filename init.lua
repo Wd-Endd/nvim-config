@@ -6,15 +6,19 @@ vim.opt.expandtab = true
 vim.cmd("set nu")
 vim.cmd("set rnu")
 vim.cmd("set nowrap")
+vim.opt.foldmethod = 'expr'
+vim.opt.foldlevel = 99
 
-vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
-vim.keymap.set('n', '<leadar>ca', vim.lsp.buf.code_action, {})
-vim.keymap.set('n', '<leadar>gd', vim.lsp.buf.definition, {})
-vim.keymap.set('n', '[t', ':tabprev<CR>', {})
-vim.keymap.set('n', ']t', ':tabnext<CR>', {})
+vim.keymap.set('n', 'K', vim.lsp.buf.hover)
+vim.keymap.set('n', '<leadar>ca', vim.lsp.buf.code_action)
+vim.keymap.set('n', '<leadar>gd', vim.lsp.buf.definition)
+-- vim.keymap.set('n', '[t', ':tabprev<CR>', {})
+-- vim.keymap.set('n', ']t', ':tabnext<CR>', {})
 
 -- Lazy Plugins Manager
 require("config.lazy")
+
+require("config.lsp-hover")
 
 -- Apply Color Scheme
 vim.cmd.colorscheme "catppuccin"

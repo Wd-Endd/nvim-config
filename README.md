@@ -5,7 +5,7 @@ Endd's NeoVim Config.
 ![Img](./.preview/Screenshot_2025-07-31_20-43-18.png)
 ![Img](./.preview/Screenshot_2025-08-01_19-50-11.png)
 ![Img](./.preview/Screenshot_2025-08-01_19-52-39.png)
-![Img](./.preview/Screenshot_2025-08-01_19-53-16.png)
+![Img](./.preview/Screenshot_2025-08-04_12-25-32.png)
 
 
 ## Installation

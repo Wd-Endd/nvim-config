@@ -19,6 +19,9 @@ return {
             highlight = {
                 enable = true,
             },
+            fold = {
+                enable = true,
+            },
             -- rainbow = {
             --     enable = true,
             --     extended_mode = true,

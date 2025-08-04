@@ -5,6 +5,10 @@ return {
             local cmp = require'cmp'
 
             cmp.setup({
+                window = {
+                    completion = cmp.config.window.bordered(),
+                    documentation = cmp.config.window.bordered(),
+                },
                 snippet = {
                     expand = function(args)
                         require('luasnip').lsp_expand(args.body)
@@ -28,11 +32,28 @@ return {
 
                 sorting = require("config.cmp-sorting"),
             })
+
+            cmp.setup.cmdline({ "/", "?" }, {
+                mapping = cmp.mapping.preset.cmdline(),
+                sources = {
+                    { name = "buffer" },
+                },
+            })
+
+            cmp.setup.cmdline(":", {
+                mapping = cmp.mapping.preset.cmdline(),
+                sources = cmp.config.sources({
+                    { name = "path" },
+                }, {
+                    { name = "cmdline" },
+                }),
+            })
         end,
         dependencies = {
             "hrsh7th/cmp-nvim-lsp",
             "hrsh7th/cmp-buffer",
             "hrsh7th/cmp-path",
+            "hrsh7th/cmp-cmdline",
 
             "L3MON4D3/LuaSnip",
             "rafamadriz/friendly-snippets",
