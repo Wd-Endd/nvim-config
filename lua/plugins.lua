@@ -52,4 +52,7 @@ return {
 
     -- Mark Down Preview
     require("plugins.md-preview"),
+
+    -- Scrollbar
+    require("plugins.scrollbar"),
 }

@@ -17,7 +17,6 @@ vim.keymap.set('n', '<leadar>gd', vim.lsp.buf.definition)
 
 -- Lazy Plugins Manager
 require("config.lazy")
-
 require("config.lsp-hover")
 
 -- Apply Color Scheme
